@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbot</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1243218800279687359/1261798645267955803/Logo_Barbotte_Photoshop.png?ex=66944510&is=6692f390&hm=e9b661258c331bb5b26786a3c38a095d0bc22020660b2948861518b9d600eef5&">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #111 25%, #ff0000 50%, #111 75%);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .shape {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(255,0,0,0.5), rgba(179,0,0,0.5));
+            border: 2px solid rgba(255, 0, 0, 0.8);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+            transform: rotate(45deg);
+            animation: rotate 10s infinite linear;
+            position: absolute;
+        }
+
+        .shape:first-child {
+            background: url('https://cdn.discordapp.com/attachments/1243218800279687359/1261798645267955803/Logo_Barbotte_Photoshop.png?ex=66944510&is=6692f390&hm=e9b661258c331bb5b26786a3c38a095d0bc22020660b2948861518b9d600eef5&') no-repeat center center;
+            background-size: cover;
+        }
+
+        .shape:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            animation-duration: 15s;
+        }
+
+        .shape:nth-child(3) {
+            width: 400px;
+            height: 400px;
+            animation-duration: 20s;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .buttons-container {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            background-color: #ff0000;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .button img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .futuristic-label {
+            font-size: 36px;
+            position: absolute;
+            top: 50px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="futuristic-label">Barbot</div>
+    <div class="container">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="buttons-container">
+        <a href="https://x.com/Barb0t" class="button"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png" alt="Twitter Logo">Twitter</a>
+        <a href="https://www.reddit.com/user/Barb0t/" class="button"><img src="https://external-preview.redd.it/iDdntscPf-nfWKqzHRGFmhVxZm4hZgaKe5oyFws-yzA.png?auto=webp&s=38648ef0dc2c3fce76d5e1d8639234d8da0152b2" alt="Reddit Logo">Reddit</a>
+        <a href="https://www.youtube.com/@Barbotte" class="button"><img src="https://1.bp.blogspot.com/-qdRfUNOtjkM/XeI_00z9pzI/AAAAAAAAF4E/FeD2SvVFnKUjPAKQ_cNM6-D2ahjKb0HkQCLcBGAsYHQ/s1600/Youtube-Icon-square-2340x2340-2.png" alt="YouTube Logo">YouTube</a>
+        <a href="https://steamcommunity.com/profiles/76561199100530272/" class="button"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam Logo">Steam</a>
+        <a href="https://soundcloud.com/barbotte-tulutu" class="button"><img src="https://icon-library.com/images/social_style_3_soundcloud-512.png" alt="SoundCloud Logo">SoundCloud</a>
+        <a href="https://open.spotify.com/user/31bhqgyfqflsy6zq45rdbbgaucfq" class="button"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo">Spotify</a>
+        <a href="https://discord.gg/S7WmAJxYaa" class="button"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/88/1d/bb/881dbbcf-1e4c-d0d2-1836-edddd36c2641/source/1280x1280bb.jpg" alt="Discord Logo">Discord</a>
+        <a href="https://www.roblox.com/users/1612687751/profile" class="button"><img src="https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht" alt="Roblox Logo">Roblox</a>
+        <a href="https://www.tiktok.com/@barb0t" class="button"><img src="https://www.tranetechnologies.cn/content/dam/cs-corporate/cscorp-china/images/douyin%20logo.jpg" alt="Tiktok Logo">Tiktok</a>
+    </div>
+</body>
+</html>
